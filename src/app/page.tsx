@@ -1,12 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.scss";
+// import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>Blog Nall App</p>
+    <main>
+      <div>
+        <h1 className="text-3xl font-bold underline">Blog Nall App </h1>
       </div>
     </main>
-  );
+  )
 }
