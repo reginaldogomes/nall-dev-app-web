@@ -1,5 +1,10 @@
 import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 
+const icons = {
+  id: 1,
+  icon: <FaInstagram />,
+}
+
 export const SocialIcons = () => {
   return (
     <ul className='flex justify-center'>

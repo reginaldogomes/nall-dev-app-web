@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='flex-col bg-secondary-500 h-screen w-screen p-2 text-base text-primary-300'>
+      <body className='flex-col bg-secondary-500 h-screen w-screen p-4 text-base text-primary-300 font-primary'>
         <Header />
         {children}
         <Footer />

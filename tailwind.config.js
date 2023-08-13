@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        primary: ['Ubuntu'],
+      },
       colors: {
         primary: {
           100: '#C9D4E8',
