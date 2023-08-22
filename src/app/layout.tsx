@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='flex-col gap-x-8 gap-y-4 bg-secondary-500 h-screen w-screen p-4 text-base text-primary-300 font-primary'>
+      <body className='flex-col justify-center items-center min-h-screen gap-x-8 gap-y-4 bg-secondary-500 p-4 text-base text-primary-300 font-primary'>
         <Header />
         {children}
         <Footer />

@@ -17,21 +17,15 @@ export const NavBar = () => {
           ></path>
         </svg>
       </button>
-      <div className='mobile-menu hidden md:hidden'>
-        <a href='#' className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>
-          Home
+      <div className='opacity-0 invisible dropdown-content group-hover:opacity-100 group-hover:visible absolute top-full left-0 bg-white border border-gray-300 rounded-md shadow-md mt-1 py-2 w-36 transition'>
+        <a href='#' className='block px-4 py-2 text-gray-700 hover:bg-gray-100'>
+          Item 1
         </a>
-        <a href='#' className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>
-          About
+        <a href='#' className='block px-4 py-2 text-gray-700 hover:bg-gray-100'>
+          Item 2
         </a>
-        <a href='#' className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>
-          Services
-        </a>
-        <a href='#' className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>
-          Portfolio
-        </a>
-        <a href='#' className='block px-4 py-2 text-gray-800 hover:bg-gray-200'>
-          Contact
+        <a href='#' className='block px-4 py-2 text-gray-700 hover:bg-gray-100'>
+          Item 3
         </a>
       </div>
     </nav>
