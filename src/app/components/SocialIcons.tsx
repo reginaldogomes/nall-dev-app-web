@@ -7,7 +7,7 @@ const icons = {
 
 export const SocialIcons = () => {
   return (
-    <ul className='flex justify-center'>
+    <ul className='flex justify-center gap-4'>
       <li>
         <a href='#'>
           <FaInstagram />
