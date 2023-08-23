@@ -1,3 +1,3 @@
-export const Resume = () => {
+export const ResumePage = () => {
   return <div>page</div>
 }
