@@ -1,3 +1,3 @@
-export const ResumePage = () => {
-  return <div>page</div>
+export default function ResumePage() {
+  return <div>Resume</div>
 }
