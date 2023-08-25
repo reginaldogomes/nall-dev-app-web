@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang='en' className='min-h-screen'>
       <body className='flex-col bg-secondary-500 text-base text-primary-300 font-primary p-2'>
         <Header />
-        <main className='min-h-screen bg-primary-600 p-2 my-2 rounded'>
+        <main className='max-w-5xl mx-auto bg-primary-600 p-2 my-2 rounded'>
           {children}
         </main>
         <Footer />

@@ -1,23 +1,31 @@
-import { FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa'
 
-const icons = {
-  id: 1,
-  icon: <FaInstagram />,
-}
+const icons = [
+  {
+    id: 1,
+    icon: <FaLinkedin />,
+    url: '#',
+  },
+  {
+    id: 2,
+    icon: <FaInstagram />,
+    url: '#',
+  },
+  {
+    id: 3,
+    icon: <FaGithub />,
+    url: '#',
+  },
+]
 
 export const SocialIcons = () => {
   return (
     <ul className='flex justify-center gap-4'>
-      <li>
-        <a href='#'>
-          <FaInstagram />
-        </a>
-      </li>
-      <li>
-        <a href='#'>
-          <FaLinkedin />
-        </a>
-      </li>
+      {icons.map((item) => (
+        <li key={item.id}>
+          <a href={item.url}>{item.icon}</a>
+        </li>
+      ))}
     </ul>
   )
 }
