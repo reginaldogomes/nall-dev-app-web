@@ -19,7 +19,7 @@ export const NavBar = () => {
       <DropdownMenu.Root>
         <DropdownMenu.Trigger asChild>
           <button
-            className='rounded-full w-[35px] h-[35px] inline-flex items-center justify-center text-violet11 bg-white shadow-[0_2px_10px] shadow-blackA7 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-black'
+            className='rounded-full w-[35px] h-[35px] inline-flex items-center justify-center text-violet11 bg-secondary-200 text-slate-50 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-black'
             aria-label='Customise options'
           >
             <HamburgerMenuIcon />
