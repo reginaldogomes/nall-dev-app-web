@@ -15,7 +15,7 @@ export const NavBar = () => {
   const [urlsChecked, setUrlsChecked] = useState(false)
   const [person, setPerson] = useState('pedro')
   return (
-    <nav className='flex'>
+    <nav className='flex items-center'>
       <DropdownMenu.Root>
         <DropdownMenu.Trigger asChild>
           <button
