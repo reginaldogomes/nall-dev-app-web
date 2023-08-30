@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
+import { LightBox } from './components/LightBox'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -19,12 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='min-h-screen min-w-screen grid grid-cols-[1fr] grid-rows-[auto_1fr_auto] gap-2 bg-secondary-500 text-base text-primary-300 font-primary p-2'>
+      <body className='min-h-screen min-w-screen grid grid-cols-[1fr] grid-rows-[auto_1fr_auto] gap-2 bg-secondary-500 text-base text-primary-300 font-primary'>
         <Header />
         <main className='w-full md:max-w-5xl mx-auto bg-primary-600 p-2 rounded'>
           {children}
         </main>
         <Footer />
+        <LightBox />
       </body>
     </html>
   )
