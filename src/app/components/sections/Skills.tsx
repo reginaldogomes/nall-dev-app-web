@@ -1,7 +1,11 @@
+import Title from '../elements/Title'
+
 export const Skills = () => {
   return (
     <>
-      <section>Skills Component</section>
+      <section>
+        <Title text='Skills' />
+      </section>
     </>
   )
 }

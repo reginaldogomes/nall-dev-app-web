@@ -23,7 +23,9 @@ export const SocialIcons = () => {
     <ul className='flex justify-center gap-4'>
       {icons.map((item) => (
         <li key={item.id}>
-          <a href={item.url}>{item.icon}</a>
+          <a href={item.url} className='text-xl'>
+            {item.icon}
+          </a>
         </li>
       ))}
     </ul>
