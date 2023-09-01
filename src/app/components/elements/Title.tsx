@@ -3,7 +3,7 @@ interface TitleProps {
 }
 
 const Title: React.FC<TitleProps> = ({ text }) => {
-  return <h1 className='text-ascent-500 text-4xl after:'>{text}</h1>
+  return <h1 className='text-ascent-500 text-4xl'>{text}</h1>
 }
 
 export default Title
