@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { HamburgerMenuIcon } from '@radix-ui/react-icons'
+import { FaBars } from 'react-icons/fa'
 import Link from 'next/link'
 // const [bookmarksChecked, setBookmarksChecked] = useState(true)
 
@@ -20,7 +20,7 @@ export const Menu: React.FC<MenuProps> = ({ links }) => {
         className='z-50 rounded-full w-[35px] h-[35px] inline-flex items-center justify-center text-violet11 bg-secondary-200 text-slate-50 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-black'
         onClick={toggleMenu}
       >
-        <HamburgerMenuIcon />
+        <FaBars />
       </button>
       {isOpen && (
         <div className='absolute top-12 right-0 bg-white border p-4 shadow-lg'>
