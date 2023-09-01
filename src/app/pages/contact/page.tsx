@@ -7,7 +7,7 @@ interface FormData {
   email: string
 }
 
-export default function ContactPage() {
+export default function Page() {
   const { register, handleSubmit, formState } = useForm<FormData>()
 
   const onSubmit = (data: FormData) => {

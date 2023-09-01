@@ -1,3 +1,3 @@
-export default function ResumePage() {
+export default function Page() {
   return <div>Resume</div>
 }
