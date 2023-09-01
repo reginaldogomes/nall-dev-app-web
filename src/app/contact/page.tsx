@@ -1,3 +1,5 @@
+'use client'
+
 import { useForm } from 'react-hook-form'
 import Title from '@/app/components/elements/Title'
 
