@@ -1,3 +1,7 @@
+import Title from '../components/elements/Title'
+
 export default function Page() {
-  return <div>page</div>
+  ;<section>
+    <Title text='About Page' />
+  </section>
 }

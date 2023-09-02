@@ -1,3 +1,9 @@
+import Title from '../components/elements/Title'
+
 export default function Page() {
-  return <div>Resume</div>
+  return (
+    <section>
+      <Title text='Resume Page' />
+    </section>
+  )
 }
