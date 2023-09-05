@@ -2,6 +2,7 @@
 
 import { useForm } from 'react-hook-form'
 import Title from '@/app/components/elements/Title'
+import { Button } from '../components/elements/Button'
 
 interface FormData {
   firstName: string
@@ -14,6 +15,9 @@ export default function Page() {
 
   const onSubmit = (data: FormData) => {
     console.log(data)
+  }
+  const handleClick = () => {
+    alert('Botão clicado!')
   }
 
   return (
@@ -28,7 +32,6 @@ export default function Page() {
             className='form-input mt-1 p-2 w-full border rounded'
           />
         </div>
-
         <div className='mb-4'>
           <label className='block text-gray-700'>Last Name</label>
           <input
@@ -37,7 +40,6 @@ export default function Page() {
             className='form-input mt-1 p-2 w-full border rounded'
           />
         </div>
-
         <div className='mb-4'>
           <label className='block text-gray-700'>Email</label>
           <input
@@ -46,7 +48,6 @@ export default function Page() {
             className='form-input mt-1 p-2 w-full border rounded'
           />
         </div>
-
         <button
           type='submit'
           disabled={formState.isSubmitting}
@@ -54,6 +55,7 @@ export default function Page() {
         >
           Submit
         </button>
+        <Button text='Clique em mim' onClick={handleClick} />
       </form>
     </section>
   )
