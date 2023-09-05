@@ -3,6 +3,7 @@
 import { useForm } from 'react-hook-form'
 import Title from '@/app/components/elements/Title'
 import { Button } from '../components/elements/Button'
+import { Section } from '../components/elements/Section'
 
 interface FormData {
   firstName: string
@@ -19,9 +20,8 @@ export default function Page() {
   const handleClick = () => {
     alert('Botão clicado!')
   }
-
   return (
-    <section>
+    <Section>
       <Title text='Contact Page' />
       <form onSubmit={handleSubmit(onSubmit)} className='p-4'>
         <div className='mb-4'>
@@ -57,6 +57,6 @@ export default function Page() {
         </button>
         <Button text='Clique em mim' onClick={handleClick} />
       </form>
-    </section>
+    </Section>
   )
 }

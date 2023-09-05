@@ -1,9 +1,10 @@
+import { Section } from '../components/elements/Section'
 import Title from '../components/elements/Title'
 
 export default function Page() {
   return (
-    <section>
+    <Section>
       <Title text='Resume Page' />
-    </section>
+    </Section>
   )
 }

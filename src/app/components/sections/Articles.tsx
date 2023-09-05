@@ -1,3 +1,5 @@
+import { Section } from '../elements/Section'
+
 export const Articles = () => {
-  return <div>Articles</div>
+  return <Section>Articles</Section>
 }
