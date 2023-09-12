@@ -3,5 +3,5 @@ type SectionProps = {
 }
 
 export const Section = (props: SectionProps) => {
-  return <section>{props.children}</section>
+  return <section className='py-4'>{props.children}</section>
 }
