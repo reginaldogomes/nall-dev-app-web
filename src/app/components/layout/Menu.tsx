@@ -23,7 +23,7 @@ export const Menu: React.FC<MenuProps> = ({ links }) => {
         <FaBars />
       </button>
       {isOpen && (
-        <div className='absolute top-12 right-0 bg-white border p-4 shadow-lg'>
+        <div className='absolute top-12 right-0 bg-white border p-4 shadow-lg rounded-lg'>
           <ul className='space-y-2'>
             {links.map((link, index) => (
               <li key={index}>
