@@ -10,6 +10,9 @@ interface Skill {
 }
 
 const skillslist: Skill[] = [
+  { title: 'HTML', icon: FaReact },
+  { title: 'CSS', icon: FaJs },
+  { title: 'JAVASCRIPT', icon: FaHtml5 },
   { title: 'Card 1', icon: FaReact },
   { title: 'Card 2', icon: FaJs },
   { title: 'Card 3', icon: FaHtml5 },
