@@ -19,15 +19,17 @@ export const Skills = () => {
   return (
     <Section>
       <Title text='Skills' />
-      {skillslist.map((card, index) => (
-        <div
-          key={index}
-          className='bg-white rounded-lg p-4 shadow-md flex flex-col items-center'
-        >
-          <card.icon className='text-3xl text-blue-500 mb-2' />
-          <h3 className='text-xl font-semibold'>{card.title}</h3>
-        </div>
-      ))}
+      <div className='grid grid-cols-3 gap-2'>
+        {skillslist.map((card, index) => (
+          <div
+            key={index}
+            className='bg-secondary-100 rounded-lg p-4 shadow-md flex flex-col items-center'
+          >
+            <card.icon className='text-3xl text-secondary-300 mb-2' />
+            <h3 className='text-xl font-semibold'>{card.title}</h3>
+          </div>
+        ))}
+      </div>
     </Section>
   )
 }
