@@ -30,15 +30,17 @@ const desenvolvedor = {
 export default function Page() {
   return (
     <Section>
-      <Title text='Resume Page' />
-      {desenvolvedor.experiencia.map((exp, index) => (
-        <div key={index}>
-          <h2>{exp.cargo}</h2>
-          <p>{exp.empresa}</p>
-          <p>{exp.periodo}</p>
-          <p>{exp.descricao}</p>
-        </div>
-      ))}
+      <Title text='Experiência Profissional' />
+      <div className='grid'>
+        {desenvolvedor.experiencia.map((exp, index) => (
+          <div key={index}>
+            <h2>{exp.cargo}</h2>
+            <p>{exp.empresa}</p>
+            <p>{exp.periodo}</p>
+            <p>{exp.descricao}</p>
+          </div>
+        ))}
+      </div>
     </Section>
   )
 }

@@ -6,5 +6,9 @@ type SectionProps = {
 export const Section = (props: SectionProps) => {
   const { color, children } = props // Destructuring para obter a cor
 
-  return <section className={`${color}`}>{children}</section>
+  return (
+    <section className={`${color} py-4 bg-primary-900 rounded`}>
+      {children}
+    </section>
+  )
 }

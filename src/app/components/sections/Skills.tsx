@@ -16,6 +16,12 @@ const skillslist: Skill[] = [
   { title: 'Card 1', icon: FaReact },
   { title: 'Card 2', icon: FaJs },
   { title: 'Card 3', icon: FaHtml5 },
+  { title: 'Card 1', icon: FaReact },
+  { title: 'Card 2', icon: FaJs },
+  { title: 'Card 3', icon: FaHtml5 },
+  { title: 'Card 1', icon: FaReact },
+  { title: 'Card 2', icon: FaJs },
+  { title: 'Card 3', icon: FaHtml5 },
 ]
 
 export const Skills = () => {
