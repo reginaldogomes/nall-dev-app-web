@@ -1,14 +1,10 @@
 type SectionProps = {
   children: React.ReactNode
-  color?: string
+  bgColor?: string
 }
 
 export const Section = (props: SectionProps) => {
-  const { color, children } = props // Destructuring para obter a cor
+  const { bgColor, children } = props // Destructuring para obter a cor
 
-  return (
-    <section className={`${color} py-4 bg-primary-900 rounded`}>
-      {children}
-    </section>
-  )
+  return <section className={`${bgColor} py-4 rounded`}>{children}</section>
 }

@@ -31,7 +31,7 @@ export default function Page() {
   return (
     <Section>
       <Title text='Experiência Profissional' />
-      <div className='grid'>
+      <div className='bg-primary-200 grid grid-cols-2 gap-2'>
         {desenvolvedor.experiencia.map((exp, index) => (
           <div key={index}>
             <h2>{exp.cargo}</h2>

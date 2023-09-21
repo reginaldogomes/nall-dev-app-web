@@ -10,7 +10,7 @@ export default function Home() {
       <p>
         Profissional com experiência em desenvolvimento Front-end e com
         experiência nas linguagens JavaScript e TypeScript e é especializado na
-        biblioteca ReatcJS e no framework NextJS.
+        biblioteca ReatcJS e no framework NextJS. 22
       </p>
       <Skills />
     </Container>
