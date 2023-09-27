@@ -15,7 +15,7 @@ export const ResumeHome = () => {
         />
       </div>
       <p className='text-center'>
-        Com mais de 10 anos de experiência no desenvolvimento de produtos
+        Com mais de 15 anos de experiência no desenvolvimento de produtos
         digitais, especialmente para plataformas web e mobile, minha jornada
         profissional é um reflexo contínuo de aprendizados e da paixão em tornar
         ideias em realidade digital.
