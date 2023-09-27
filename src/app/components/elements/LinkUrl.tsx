@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link' // Alterei o nome da importação para 'NextLink' para evitar conflito com o nome do seu componente
 
 type LinkProps = {
   href: string
