@@ -8,7 +8,7 @@ export const Section = (props: SectionProps) => {
 
   return (
     <section
-      className={`${bgColor} flex-col content-center py-4 rounded text-center`}
+      className={`${bgColor} grid items-center justify-center	gap-4 py-4 rounded`}
     >
       {children}
     </section>

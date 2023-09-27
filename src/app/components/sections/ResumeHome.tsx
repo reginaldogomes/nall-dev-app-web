@@ -1,24 +1,26 @@
-import { Section } from '../elements/Section'
 import Image from 'next/image'
+import LinkUrl from '../elements/LinkUrl'
 
 const avatar = '/nall-resume.svg'
 
 export const ResumeHome = () => {
   return (
-    <Section bgColor='bg-primary-600'>
-      <Image
-        src={avatar}
-        width={100}
-        height={100}
-        alt='Picture of the author'
-      />
+    <section className='mx-auto grid items-center justify-center gap-4 py-4 px-8 rounded text-center'>
+      <div className='mx-auto'>
+        <Image
+          src={avatar}
+          width={100}
+          height={100}
+          alt='Picture of the author'
+        />
+      </div>
       <p>
-        Tenho uma sólida bagagem com mais de 10 anos de experiência no
-        desenvolvimento de produtos digitais, com um foco especial em soluções
-        para plataformas web e mobile. Minha trajetória profissional é um
-        testemunho vivo de aprendizados contínuos e de uma paixão inabalável por
-        transformar ideias em realidade digital.
+        Com mais de 10 anos de experiência no desenvolvimento de produtos
+        digitais, especialmente para plataformas web e mobile, minha jornada
+        profissional é um reflexo contínuo de aprendizados e da paixão em tornar
+        ideias em realidade digital.
       </p>
-    </Section>
+      <LinkUrl href='/about'>Saiba Mais</LinkUrl>
+    </section>
   )
 }
