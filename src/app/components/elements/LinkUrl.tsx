@@ -9,7 +9,7 @@ const LinkUrl = ({ href, children }: LinkProps) => {
   return (
     <Link
       href={href}
-      className='bg-ascent-600 rounded p-2 text-ascent-100 uppercase text-sm'
+      className='flex bg-ascent-600 rounded p-2 text-ascent-100 uppercase text-sm'
     >
       {children}
     </Link>
