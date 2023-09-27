@@ -21,7 +21,7 @@ export const ResumeHome = () => {
         ideias em realidade digital.
       </p>
       <div className='mx-auto'>
-        <LinkUrl href='/about'>Conheça minha trajetoria</LinkUrl>
+        <LinkUrl href='/about'>Conheça a minha trajetória</LinkUrl>
       </div>
     </section>
   )
