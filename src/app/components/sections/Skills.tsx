@@ -33,19 +33,19 @@ const skillslist: Skill[] = [
 
 export const Skills = () => {
   return (
-    <Section bgColor='bg-primary-100'>
+    <section>
       <Title text='Skills' />
       <div className='grid grid-cols-4 gap-2'>
         {skillslist.map((card, index) => (
           <div
             key={index}
-            className='bg-primary-100 rounded-lg p-4 shadow-md flex flex-col items-center'
+            className='rounded-lg p-4 shadow-md flex flex-col items-center'
           >
             <card.icon className='text-3xl text-primary-300 mb-2' />
             <h3 className='text-xl font-semibold'>{card.title}</h3>
           </div>
         ))}
       </div>
-    </Section>
+    </section>
   )
 }

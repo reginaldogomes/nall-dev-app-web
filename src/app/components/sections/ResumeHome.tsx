@@ -5,8 +5,8 @@ const avatar = '/nall-resume.svg'
 
 export const ResumeHome = () => {
   return (
-    <section className='mx-auto grid items-center justify-center gap-4 py-4 px-8 rounded text-center'>
-      <div className='mx-auto'>
+    <section className='mx-auto flex-col items-center gap-x-9 py-4 px-8 rounded text-center'>
+      <div className='mx-auto text-center'>
         <Image
           src={avatar}
           width={100}
