@@ -1,8 +1,10 @@
 import { IconType } from 'react-icons'
-import { FaReact, FaJs, FaHtml5 } from 'react-icons/fa'
+import { FaReact, FaJs, FaHtml5, FaDocker, FaCss3Alt } from 'react-icons/fa'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { BsGit } from 'react-icons/bs'
+import { IoLogoJavascript } from 'react-icons/io'
 
 import Title from '../elements/Title'
-import { Section } from '../elements/Section'
 
 interface Skill {
   title: string
@@ -18,10 +20,10 @@ interface Skill {
 
 const skillslist: Skill[] = [
   { title: 'HTML', icon: FaHtml5 },
-  { title: 'CSS', icon: FaJs },
-  { title: 'JAVASCRIPT', icon: FaHtml5 },
+  { title: 'CSS', icon: FaCss3Alt },
+  { title: 'JAVASCRIPT', icon: IoLogoJavascript },
   { title: 'REACT', icon: FaReact },
-  { title: 'NEXTJS', icon: FaJs },
+  { title: 'NEXTJS', icon: TbBrandNextjs },
   { title: 'TYPESCRIPT', icon: FaHtml5 },
   { title: 'NODEJS', icon: FaReact },
   { title: 'EXPRESS', icon: FaJs },
@@ -29,6 +31,8 @@ const skillslist: Skill[] = [
   { title: 'NESTJS', icon: FaReact },
   { title: 'MONGODB', icon: FaJs },
   { title: 'POSTGRESQL ', icon: FaHtml5 },
+  { title: 'Docker ', icon: FaDocker },
+  { title: 'Git ', icon: BsGit },
 ]
 
 export const Skills = () => {

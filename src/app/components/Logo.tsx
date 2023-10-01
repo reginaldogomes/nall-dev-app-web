@@ -1,7 +1,7 @@
 export const Logo = () => {
   const data = {
     name: 'Reginaldo Gomes',
-    position: 'Consultor de Soluções Digitais',
+    position: 'Desenvolvedor Front-end Web',
   }
   return (
     <div className='flex-col items-center leading-4'>
