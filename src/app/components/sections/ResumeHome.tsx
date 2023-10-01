@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import LinkUrl from '../elements/LinkUrl'
+import Title from '../elements/Title'
 
 const avatar = '/nall-resume.svg'
 
