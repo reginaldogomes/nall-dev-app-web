@@ -8,7 +8,7 @@ const desenvolvedor = {
       empresa: 'Tech Solutions Ltda',
       periodo: 'Janeiro de 2018 - Presente',
       descricao:
-        'Trabalhei como desenvolvedor full stack, participando no desenvolvimento de aplicações web utilizando tecnologias como HTML, CSS, JavaScript, Node.js e React.',
+        'Trabalhei como desenvolvedor full stack, participando no desenvolvimento de aplicações web utilizando tecnologias como HTML, CSS, JavaScript, Node.js e React. tecnologias como HTML, CSS, JavaScript, Node.js e React.',
     },
     {
       cargo: 'Desenvolvedor Front-end',
@@ -31,9 +31,9 @@ export default function Page() {
   return (
     <Section>
       <Title text='Experiência Profissional' />
-      <div className='bg-primary-200 grid grid-cols-2 gap-2'>
+      <div className='grid grid-cols-2 gap-2'>
         {desenvolvedor.experiencia.map((exp, index) => (
-          <div key={index}>
+          <div key={index} className='grid gap-y-px bg-primary-500 p-4 rounded'>
             <h2>{exp.cargo}</h2>
             <p>{exp.empresa}</p>
             <p>{exp.periodo}</p>
