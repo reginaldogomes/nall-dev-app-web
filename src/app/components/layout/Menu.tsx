@@ -23,10 +23,10 @@ export const Menu: React.FC<MenuProps> = ({ links }) => {
         <FaBars />
       </button>
       {isOpen && (
-        <div className='absolute top-12 right-0 bg-white border p-4 shadow-lg rounded-lg'>
+        <div className='min-w-full absolute top-12 right-0 bg-primary-500 p-4 shadow-lg rounded-lg'>
           <ul className='space-y-2'>
             {links.map((link, index) => (
-              <li key={index}>
+              <li key={index} className='p-1'>
                 <Link href={link.url} className='text-blue-500 hover:underline'>
                   {link.text}
                 </Link>
