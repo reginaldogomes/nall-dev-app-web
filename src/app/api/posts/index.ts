@@ -1,6 +1,6 @@
 // pages/api/posts/index.ts
 import { NextApiRequest, NextApiResponse } from 'next'
-import postController from '../../../controllers/postController'
+import postController from '../../controllers/postController'
 
 export default async function handler(
   req: NextApiRequest,
