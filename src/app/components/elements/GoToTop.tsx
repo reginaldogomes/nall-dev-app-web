@@ -32,7 +32,7 @@ export const GoToTopButton: FC = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className='fixed bottom-4 right-4 p-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300'
+          className='fixed bottom-4 right-4 p-2 bg-ascent text-white rounded-full shadow-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300'
         >
           Ir para o Topo
         </button>

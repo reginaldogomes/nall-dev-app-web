@@ -18,9 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='pt'>
-      <body className='min-h-screen min-w-screen grid grid-cols-[1fr] grid-rows-[auto_1fr_auto] py-2 px-2 gap-2 bg-secondary-500 text-base text-primary-300 font-primary antialiased'>
+      <body className='min-h-screen min-w-screen grid grid-cols-[1fr] grid-rows-[auto_1fr_auto] py-2 px-2 gap-2 bg-primary text-base text-text font-primary antialiased'>
         <Header />
-        <main className='w-full md:max-w-5xl mx-auto bg-primary-600 p-2 rounded'>
+        <main className='w-full md:max-w-5xl mx-auto bg-primary p-2 rounded'>
           {children}
         </main>
         <Footer />
