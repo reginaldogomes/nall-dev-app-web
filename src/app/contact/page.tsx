@@ -1,9 +1,9 @@
 'use client'
 
 import { useForm } from 'react-hook-form'
-import Title from '@/app/components/elements/Title'
-import { Button } from '../components/elements/Button'
-import { Section } from '../components/elements/Section'
+import Title from '@/components/elements/Title'
+import { Button } from '../../components/elements/Button'
+import { Section } from '../../components/elements/Section'
 
 interface FormData {
   firstName: string

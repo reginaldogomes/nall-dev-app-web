@@ -1,4 +1,4 @@
-import Title from '../components/elements/Title'
+import Title from '../../components/elements/Title'
 
 export default function Page() {
   return (

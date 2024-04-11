@@ -1,5 +1,5 @@
-import { Section } from '../components/elements/Section'
-import Title from '../components/elements/Title'
+import { Section } from '../../components/elements/Section'
+import Title from '../../components/elements/Title'
 
 const desenvolvedor = {
   experiencia: [
