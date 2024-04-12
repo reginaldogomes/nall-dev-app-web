@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 // components/MenuItem.tsx
 interface MenuItemProps {
   href: string
@@ -5,12 +7,12 @@ interface MenuItemProps {
 }
 
 const MenuItem: React.FC<MenuItemProps> = ({ href, label }) => (
-  <a
+  <Link
     href={href}
     className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium'
   >
     {label}
-  </a>
+  </Link>
 )
 
 export default MenuItem

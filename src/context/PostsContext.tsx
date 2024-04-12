@@ -1,23 +1,39 @@
 'use client'
-// src/context/PostsContext.tsx
-import { createContext, useContext, useState, useEffect } from 'react'
-import { fetchPosts } from '@/services/api' // A função fetchPosts será implementada em outro passo
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+} from 'react'
+import { fetchPosts } from '@/services/api' // Suponha que isso retorna uma array de objetos de post
+
+// Definição de tipo para um post individual
+interface Post {
+  id: number
+  title: string
+  content: string
+}
 
 // Tipo para o estado do contexto
 interface PostsContextType {
-  posts: any[] // Defina um tipo mais específico para seus posts
+  posts: Post[]
 }
 
 // Criação do contexto com um estado inicial
 const PostsContext = createContext<PostsContextType | undefined>(undefined)
 
 // Componente Provider
-export const PostsProvider: React.FC = ({ children }) => {
-  const [posts, setPosts] = useState<any[]>([]) // Defina um tipo mais específico para seus posts
+interface PostsProviderProps {
+  children: ReactNode
+}
+
+export function PostsProvider({ children }: PostsProviderProps) {
+  const [posts, setPosts] = useState<Post[]>([]) // Usando o tipo definido para posts
 
   useEffect(() => {
     const loadPosts = async () => {
-      const postsData = await fetchPosts()
+      const postsData = await fetchPosts() // Assumindo que isso retorna Post[]
       setPosts(postsData)
     }
 
