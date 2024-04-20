@@ -10,6 +10,7 @@ import { fetchPosts } from '@/services/api' // Suponha que isso retorna uma arra
 
 // Definição de tipo para um post individual
 interface Post {
+  body: ReactNode
   id: number
   title: string
   content: string
@@ -46,7 +47,15 @@ export function PostsProvider({ children }: PostsProviderProps) {
 }
 
 // Hook personalizado para uso do contexto
-export const usePosts = () => {
+// export const usePosts = () => {
+//   const context = useContext(PostsContext)
+//   if (context === undefined) {
+//     throw new Error('usePosts must be used within a PostsProvider')
+//   }
+//   return context
+// }
+
+export function usePosts() {
   const context = useContext(PostsContext)
   if (context === undefined) {
     throw new Error('usePosts must be used within a PostsProvider')
